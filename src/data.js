@@ -1,14 +1,14 @@
 export const sliderItems = [
     {
       id: 1,
-      img: "https://w7.pngwing.com/pngs/700/222/png-transparent-woman-wearing-white-off-shoulder-top-and-distressed-jeans-female-jeans-fashion-jeans.png",
+      img: "https://w7.pngwing.com/pngs/261/831/png-transparent-jeans-model-woman-jeans-fashion-woman-fashion-model.png",
       title: "SUMMER SALE",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "f5fafd",
     },
     {
       id: 2,
-      img: "https://w7.pngwing.com/pngs/700/222/png-transparent-woman-wearing-white-off-shoulder-top-and-distressed-jeans-female-jeans-fashion-jeans.png",
+      img: "https://e7.pngegg.com/pngimages/907/822/png-clipart-woman-wearing-white-mini-dress-model-bijin-long-hair-fashion-beautiful-models-celebrities-white.png",
       title: "AUTUMN COLLECTION",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "fcf1ed",
