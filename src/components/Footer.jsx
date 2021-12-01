@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import {
-  FacebookIcon,
-  Instagram,
-  Twitter,
-  LocationOn,
-  Phone,
-  AlternateEmail,
-} from "@mui/icons-material";
+
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import EmailIcon from "@mui/icons-material/Email";
+import img from "../images/logo1.png";
 
 const Container = styled.div`
   display: flex;
@@ -14,7 +14,7 @@ const Container = styled.div`
 
 const Center = styled.div`
   flex: 1;
-  padding: 20px;
+  padding: 10px;
 `;
 
 const Title = styled.h3`
@@ -45,7 +45,7 @@ const ContactItem = styled.div`
 `;
 
 const Payment = styled.img`
-    width: 50%;
+  width: 50%;
 `;
 
 const Left = styled.div`
@@ -70,7 +70,7 @@ const SocialIcon = styled.div`
   height: 40px;
   border-radius: 50%;
   color: white;
-  border-color: #${(props) => props.color};
+  background-color: #${(props) => props.color};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,7 +81,9 @@ const Footer = () => {
   return (
     <Container>
       <Left>
-        <Logo>Shop.</Logo>
+        <Logo>
+          <img src={img} alt="" style={{ height: 50 }} />
+        </Logo>
         <Dec>
           here are many variations of passages of Lorem Ipsum available, but the
           majority have suffered alteration in some form, by injected humour, or
@@ -92,10 +94,10 @@ const Footer = () => {
             <FacebookIcon />
           </SocialIcon>
           <SocialIcon color="55ACEE">
-            <Twitter />
+            <TwitterIcon />
           </SocialIcon>
           <SocialIcon color="E4405F">
-            <Instagram />
+            <InstagramIcon />
           </SocialIcon>
         </SocialContainer>
       </Left>
@@ -117,13 +119,13 @@ const Footer = () => {
       <Right>
         <Title>Contact</Title>
         <ContactItem>
-          <Room style={{ marginRight: "10px" }} /> Khartoum ,Sudan
+          <LocationOnIcon style={{ marginRight: "10px" }} /> Khartoum ,Sudan
         </ContactItem>
         <ContactItem>
-          <Phone style={{ marginRight: "10px" }} /> +249912300012
+          <LocalPhoneIcon style={{ marginRight: "10px" }} /> +249912300012
         </ContactItem>
         <ContactItem>
-          <MailOutline style={{ marginRight: "10px" }} /> contact@shop.dev
+          <EmailIcon style={{ marginRight: "10px" }} /> contact@shop.dev
         </ContactItem>
         <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
       </Right>

@@ -1,17 +1,16 @@
 import styled from "styled-components";
-import {
-  ShoppingCartOutlinedIcon,
-  SearchOutlined,
-  FavoriteBorderOutlined,
-} from "@mui/icons-material";
+import SearchIcon from "@mui/icons-material/Search";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 
 const Info = styled.div`
   opacity: 0;
   width: 100%;
   height: 100%;
+  position: absolute;
   top: 0;
   left: 0;
-  border-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   z-index: 3;
   display: flex;
   align-items: center;
@@ -31,7 +30,7 @@ const Container = styled.div`
   background-color: #f5fbfd;
   position: relative;
 
-  &:hover ${Info} {
+  &:hover ${Info}{
     opacity: 1;
   }
 `;
@@ -53,19 +52,17 @@ const Icon = styled.div`
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border-color: white;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 10px;
   transition: all 0.5s ease;
-
   &:hover {
     background-color: #e9f5f5;
     transform: scale(1.1);
   }
 `;
-
 
 const Product = ({ item }) => {
   return (
@@ -74,13 +71,13 @@ const Product = ({ item }) => {
       <Image src={item.img} />
       <Info>
         <Icon>
-          <ShoppingCartOutlinedIcon />
+          <ShoppingCartIcon />
         </Icon>
         <Icon>
-          <SearchOutlined />
+          <SearchIcon />
         </Icon>
         <Icon>
-          <FavoriteBorderOutlined />
+          <FavoriteBorderOutlinedIcon />
         </Icon>
       </Info>
     </Container>

@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { SearchIcon, ShoppingCartOutlined  } from "@mui/icons-material";
+import SearchOutlined from "@mui/icons-material/SearchOutlined";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import Badge from "@mui/material/Badge";
-
+import img from "../images/logo1.png";
 const Container = styled.div`
   height: 60px;
 `;
@@ -15,6 +16,7 @@ const Warapper = styled.div`
 
 const Left = styled.div`
   flex: 1;
+  display: flex;
   align-items: center;
 `;
 
@@ -26,8 +28,9 @@ const SearchContainer = styled.div`
   border: 0.5px solid lightgray;
   display: flex;
   align-items: center;
-  margin-left: 25px;
+  margin-left: 15px;
   padding: 5px;
+  cursor: pointer;
 `;
 const Input = styled.input`
   border: none;
@@ -61,18 +64,21 @@ const Navbar = () => {
           <Language></Language>
           <SearchContainer>
             <Input />
-            <SearchIcon style={{color:'gray', fontSize:16}}/>
+            <SearchOutlined style={{ color: "gray", fontSize: 16 }} />
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>Shop.</Logo>
+          <Logo>
+            {" "}
+            <img src={img} alt="" style={{ height: 50 }} />{" "}
+          </Logo>
         </Center>
         <Right>
           <MenuItem>sigin</MenuItem>
           <MenuItem>sigup</MenuItem>
           <MenuItem>
             <Badge badgeContent={4} color="primary">
-              <ShoppingCartOutlined />
+              <ShoppingCartOutlinedIcon />
             </Badge>
           </MenuItem>
         </Right>

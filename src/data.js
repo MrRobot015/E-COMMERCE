@@ -1,21 +1,21 @@
 export const sliderItems = [
     {
       id: 1,
-      img: "https://w7.pngwing.com/pngs/261/831/png-transparent-jeans-model-woman-jeans-fashion-woman-fashion-model.png",
+      img: "https://i.ibb.co/cXFnLLV/3.png",
       title: "SUMMER SALE",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "f5fafd",
     },
     {
       id: 2,
-      img: "https://e7.pngegg.com/pngimages/907/822/png-clipart-woman-wearing-white-mini-dress-model-bijin-long-hair-fashion-beautiful-models-celebrities-white.png",
+      img: "https://i.ibb.co/DG69bQ4/2.png",
       title: "AUTUMN COLLECTION",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "fcf1ed",
     },
     {
       id: 3,
-      img: "https://w7.pngwing.com/pngs/700/222/png-transparent-woman-wearing-white-off-shoulder-top-and-distressed-jeans-female-jeans-fashion-jeans.png",
+      img: "https://i.ibb.co/cXFnLLV/3.png",
       title: "LOUNGEWEAR LOVE",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "fbf0f4",
@@ -67,7 +67,7 @@ export const sliderItems = [
     },
     {
       id:7,
-      img:"https://www.vintageindustries.nl/download_front/qympzk1762/2217_Arrow_Jacket_Forest.png",
+      img:"https://n.nordstrommedia.com/id/sr3/fa5d40ed-1e9b-49d0-9521-fa87f858b668.jpeg?h=365&w=240&dpr=2",
     },
     {
       id:8,

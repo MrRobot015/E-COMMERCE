@@ -1,13 +1,11 @@
 import styled from "styled-components";
-import {
-  ArrowLeftOutlinedIcon,
-  ArrowRightOutlinedIcon,
-} from "@mui/icons-material";
+import ArrowLeftOutLinedIcon from "@mui/icons-material/ArrowLeftOutlined";
+import ArrowRightOutlinedIcon from "@mui/icons-material/ArrowRightOutlined";
 import { sliderItems } from "../data";
 import { useState } from "react";
 
 const Container = styled.div`
-  width: 100px;
+ width: 100%;
   height: 100vh;
   display: flex;
   position: relative;
@@ -17,7 +15,7 @@ const Container = styled.div`
 const Arrow = styled.div`
   width: 50px;
   height: 50px;
-  border-color: #fff7f7;
+  background-color: #fff7f7;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -36,7 +34,7 @@ const Wrapper = styled.div`
   height: 100px;
   display: flex;
   transition: all 1.5s ease;
-  transform: translateX(${props => props.slideIndex * 100} vw);
+  transform: translateX(${(props) => props.slideIndex * -100}vw);
 `;
 
 const Slide = styled.div`
@@ -79,8 +77,8 @@ const Button = styled.button`
 
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
-  const handleClick = (direcation) => {
-    if (direcation === "left") {
+  const handleClick = (direction) => {
+    if (direction === "left") {
       setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
     } else {
       setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
@@ -89,10 +87,10 @@ const Slider = () => {
 
   return (
     <Container>
-      <Arrow direcation="left" onClick={() => handleClick("left")}>
-        <ArrowLeftOutlinedIcon />
+      <Arrow direction="left" onClick={() => handleClick("left")}>
+        <ArrowLeftOutLinedIcon />
       </Arrow>
-      <Wrapper slideIndex = {slideIndex}>
+      <Wrapper slideIndex={slideIndex}>
         {sliderItems.map((item) => (
           <Slide bg={item.bg} key={item.id}>
             <ImgContainer>
