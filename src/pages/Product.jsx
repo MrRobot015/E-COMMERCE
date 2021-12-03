@@ -18,7 +18,7 @@ const ImgContainer = styled.div`
 
 const Image = styled.img`
     width: 100%;
-    height: 20vh;
+    height: 70vh;
     object-fit: cover;
 `;
 
@@ -118,7 +118,7 @@ const Product = () => {
             <Announcement />
             <Wrapper>
                 <ImgContainer>
-                    <Image src="" />
+                    <Image src="https://i.ibb.co/S6qMxwr/jean.jpg" />
                 </ImgContainer>
                 <InfoContainer>
                     <Title>Denim Jumpsuit</Title>
@@ -150,9 +150,9 @@ const Product = () => {
           </FilterContainer>
           <AddContainer>
             <AmountContainer>
-              <Remove />
+              <Remove style={{cursor:"pointer" }}/>
               <Amount>1</Amount>
-              <Add />
+              <Add style={{cursor:"pointer" }}/>
             </AmountContainer>
             <Button>ADD TO CART</Button>
           </AddContainer>
