@@ -1,15 +1,17 @@
 import styled from "styled-components";
-import Navbar from "../components/Navbar";
+import Nav1 from "../components/Nav1";
 import Announcement from "../components/Announcement";
 import NewsLetter from "../components/NewsLetter";
 import Footer from "../components/Footer";
 import { Add, Remove } from "@mui/icons-material";
+import { mobile } from "../responsive";
 
 const Container = styled.div``;
 
 const Wrapper = styled.div`
     padding: 20px;
     display: flex;
+    ${mobile({ padding: "10px", flexDirection:"column" })}
 `;
 
 const ImgContainer = styled.div`
@@ -20,11 +22,13 @@ const Image = styled.img`
     width: 100%;
     height: 70vh;
     object-fit: cover;
+    ${mobile({ height: "40vh" })}
 `;
 
 const InfoContainer = styled.div`
     flex: 1;
     padding: 0px 50px;
+    ${mobile({ padding: "10px" })}
 `;
 
 const Title = styled.h1`
@@ -45,6 +49,7 @@ const FilterContainer = styled.div`
   margin: 30px 0px;
   display: flex;
   justify-content: space-between;
+  ${mobile({ width: "100%" })}
   
 `;
 
@@ -79,6 +84,7 @@ const AddContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  ${mobile({ width: "100%" })}
 
 `;
 
@@ -114,7 +120,7 @@ const Button = styled.button`
 const Product = () => {
     return (
         <Container>
-            <Navbar />
+            <Nav1 />
             <Announcement />
             <Wrapper>
                 <ImgContainer>
