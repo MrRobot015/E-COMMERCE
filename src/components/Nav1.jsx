@@ -30,7 +30,7 @@ const Nav1 = () => {
     };
 
     return (
-        <AppBar position="static">
+        <AppBar position="static" style={{backgroundColor:"#241d5c"}}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <Typography
